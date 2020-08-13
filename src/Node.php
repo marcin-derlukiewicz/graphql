@@ -259,7 +259,7 @@ class Node
         }
 
         $ql .= implode($glue, array_merge($props, $mods));
-
+        if (trim($ql) == '{') return '';
         return $ql . str_repeat(' ', ($index * $tab) - $tab) . "}" . $crl;
     }
 
