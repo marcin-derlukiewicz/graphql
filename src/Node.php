@@ -91,8 +91,8 @@ class Node
     /**
      * Graph constructor.
      *
-     * @param null $name
-     * @param null $properties
+     * @param null|string $name
+     * @param null|array<mixed> $properties
      */
     public function __construct($name = null, $properties = null)
     {
