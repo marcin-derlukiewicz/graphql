@@ -52,7 +52,7 @@ class Arguments
     protected function parse($input): string
     {
         if (!is_array($input)) {
-            return json_encode($input);
+            return json_encode($input, JSON_UNESCAPED_UNICODE);
         }
 
         $parsed = "";
